@@ -7,7 +7,7 @@ import BandInput from './BandInput'
 class BandsContainer extends Component {
 
   renderBands = () => {
-    this.props.bands.map((band, id) => <BandInput key={id} text={band})
+    this.props.bands.map((band, id) => <BandInput key={id} text={band} />)
   }
 
   render() {
