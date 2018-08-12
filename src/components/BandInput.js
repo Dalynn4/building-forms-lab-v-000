@@ -6,18 +6,18 @@ class BandInput extends Component {
   state = {
       text: ''
     }
-   
+
     handleChange = event => {
       this.setState({
         text: event.target.value
       });
     }
-   
+
     handleSubmit = event => {
       event.preventDefault()
       this.props.addBand(this.state)
     }
-   
+
     render() {
       return(
         <div>
@@ -32,10 +32,10 @@ class BandInput extends Component {
      );
     }
   };
-   
+
   mapDispatchToProps = dispatch => {
     return {
-      addBand: formData => dispatch({ type: 'EXAMPLE', payload: formData })
+      addBand: formData => dispatch({ type: 'ADD_BAND', payload: formData })
     }
   }
 }
