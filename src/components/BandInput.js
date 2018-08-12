@@ -33,7 +33,7 @@ class BandInput extends Component {
     }
   };
 
-  mapDispatchToProps = dispatch => {
+  mapDispatchToProps = (dispatch) => {
     return {
       addBand: formData => dispatch({ type: 'ADD_BAND', payload: formData })
     }
